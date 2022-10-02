@@ -1,0 +1,31 @@
+.inputRow {
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.buttonSave {
+    padding: 5px;
+    margin: 5px 0;
+    background-color: lightblue;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.resultTable {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.headTable {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.headTableLabel {
+    flex: 1;
+    font-weight: bold;
+}

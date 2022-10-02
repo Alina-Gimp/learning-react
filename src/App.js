@@ -9,13 +9,17 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <p>
+          I'm very happy I have my own pasij blog about everything!
+          But that's not so good that I do not understand this text *crying*
+        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn Gimpij React
         </a>
       </header>
     </div>
