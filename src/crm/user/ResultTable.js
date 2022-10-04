@@ -14,7 +14,6 @@ const ResultTable = ({users, remove}) => {
                 users.map((user, index) => (
                     <UserTableRow
                         key={index}
-                        index={index}
                         user={user}
                         onClickRemove={() => remove(index)}
                     />
