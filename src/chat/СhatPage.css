@@ -4,14 +4,23 @@
     justify-content: center;
 }
 
+.chatName {
+    margin-left: 10px;
+}
+
 .windowMessage {
-    width: 310px;
-    height: 350px;
+    width: 280px;
+    height: 380px;
     background-color: aliceblue;
     border-radius: 10px;
     overflow: auto;
+    margin-left: 10px;
 }
 
+.input {
+    margin-left: 10px;
+    margin-top: 10px;
+}
 .inputMessage {
     border-radius: 10px;
     width: 300px;
@@ -19,20 +28,24 @@
     border: 0px;
     box-shadow: 4px 4px 2px lightskyblue;
     outline: none;
+
+}
+
+.buttonDiv {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
 }
 
 .buttonSent {
-    border-radius: 10px;
-    border: 0px;
-    background-color: cadetblue;
-    color: white;
-    padding: 5px;
-    margin: 10px;
+    display:inline-block;
+
 }
 
 .buttonClear {
-    border-radius: 10px;
-    border: 0px;
-    padding: 5px;
-    margin: 10px;
+    margin-left: 10px;
+    display:inline-block;
+
 }

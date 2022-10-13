@@ -44,7 +44,7 @@ function ChatPage() {
 
     return (
         <>
-            <h1 className="chatName">Онлайн-чат</h1>
+            <h1 className="chatName">Online-chat</h1>
             <MessageResult
                 messages={messages}
             />

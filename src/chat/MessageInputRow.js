@@ -1,4 +1,5 @@
 import React from "react";
+import {TextField} from "@mui/material";
 
 const MessageInputRow = ({placeholder, parameter, onChange, onSend}) => {
 
@@ -10,8 +11,8 @@ const MessageInputRow = ({placeholder, parameter, onChange, onSend}) => {
 
     return (
         <div className="input">
-            <input type="text" className="inputMessage" value={parameter} onChange={onChange}
-                   onKeyDown={onKeyDownHandler} placeholder={placeholder}/>
+            <TextField id="outlined-basic" label={placeholder} variant="outlined" value={parameter} onChange={onChange}
+                       onKeyDown={onKeyDownHandler} />
         </div>
     )
 }
