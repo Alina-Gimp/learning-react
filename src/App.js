@@ -1,5 +1,4 @@
-import ChatPage from "./chat/ChatPage";
-import ToDoList from "./to-do-list/ToDoList";
+import ToDoList from './to-do-list/ToDoList';
 
 function App() {
   return (

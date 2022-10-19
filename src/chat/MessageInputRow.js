@@ -1,20 +1,27 @@
-import React from "react";
-import {TextField} from "@mui/material";
+import React from 'react';
+import { TextField } from '@mui/material';
 
-const MessageInputRow = ({placeholder, parameter, onChange, onSend}) => {
+function MessageInputRow({
+  placeholder, parameter, onChange, onSend,
+}) {
+  const onKeyDownHandler = (event) => {
+    if (event.key !== 'Enter') return;
 
-    const onKeyDownHandler = (event) => {
-        if (event.key !== 'Enter') return;
+    onSend();
+  };
 
-        onSend();
-    }
-
-    return (
-        <div className="input">
-            <TextField id="outlined-basic" label={placeholder} variant="outlined" value={parameter} onChange={onChange}
-                       onKeyDown={onKeyDownHandler} />
-        </div>
-    )
+  return (
+    <div className="input">
+      <TextField
+        id="outlined-basic"
+        label={placeholder}
+        variant="outlined"
+        value={parameter}
+        onChange={onChange}
+        onKeyDown={onKeyDownHandler}
+      />
+    </div>
+  );
 }
 
 export default MessageInputRow;
