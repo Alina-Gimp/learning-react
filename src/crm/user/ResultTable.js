@@ -11,11 +11,11 @@ function ResultTable({ users, remove }) {
         <div className="headTableLabel">Контроль</div>
       </div>
       {
-                users.map((user, index) => (
+                users.map((user, item) => (
                   <UserTableRow
-                    key={index}
+                    key={item.id}
                     user={user}
-                    onClickRemove={() => remove(index)}
+                    onClickRemove={() => remove(item.id)}
                   />
                 ))
             }

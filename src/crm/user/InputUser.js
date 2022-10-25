@@ -63,6 +63,7 @@ function InputUser({ saveUser }) {
 
       <div>
         <button
+          type="button"
           id="btn"
           className="buttonSave"
           onClick={onClickSave}
