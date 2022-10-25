@@ -25,12 +25,7 @@ function MessageInput({ sentMessage, clearChat }) {
   const onClickSent = () => {
     if (!message || !author) return;
 
-    const modifiedMessage = {
-      isChecked: checked,
-      ...message
-    }
-
-    sentMessage(modifiedMessage, author);
+    sentMessage(message, author, checked);
     reset();
   };
 

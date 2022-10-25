@@ -20,13 +20,14 @@ function ChatPage() {
     }
   }, [messages.length]);
 
-  const sentMessage = (text, author) => {
+  const sentMessage = (text, author, isMe) => {
     const messagesForSending = [...messages];
 
     const message = {
       text,
       date: new Date(),
       author,
+      isMe
     };
     messagesForSending.push(message);
 
