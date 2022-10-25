@@ -17,5 +17,12 @@ module.exports = {
     'react',
   ],
   rules: {
+    "react/prop-types": "off",
+    "react/jsx-filename-extension": "off",
+    "no-use-before-define": "off",
+    "no-param-reassign": "off",
+    "jsx-a11y/label-has-associated-control": "off",
   },
+
+
 };
