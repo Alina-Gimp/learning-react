@@ -10,13 +10,13 @@ function ChatPage() {
     const rawMessages = localStorage.getItem('messages');
     if (!rawMessages) return;
 
-    const messages = JSON.parse(rawMessages);
-    messages.forEach((message) => {
+    const storedMessages = JSON.parse(rawMessages);
+    storedMessages.forEach((message) => {
       message.date = new Date(message.date);
     });
 
-    if (!!messages && messages.length > 0) {
-      setMessages(messages);
+    if (!!storedMessages && storedMessages.length > 0) {
+      setMessages(storedMessages);
     }
   }, [messages.length]);
 

@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Button } from '@mui/material';
+import Switch from '@mui/material/Switch';
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
 import MessageInputRow from './MessageInputRow';
+
 
 function MessageInput({ sentMessage, clearChat }) {
   const [message, setMessage] = useState('');
@@ -13,10 +17,20 @@ function MessageInput({ sentMessage, clearChat }) {
     setAuthor(event.target.value);
   };
 
+  const [checked, setChecked] = useState(false);
+  const switchHandler = (event) => {
+    setChecked(event.target.checked);
+  };
+
   const onClickSent = () => {
     if (!message || !author) return;
 
-    sentMessage(message, author);
+    const modifiedMessage = {
+      isChecked: checked,
+      ...message
+    }
+
+    sentMessage(modifiedMessage, author);
     reset();
   };
 
@@ -50,6 +64,11 @@ function MessageInput({ sentMessage, clearChat }) {
         </div>
         <div className="buttonClear">
           <Button variant="outlined" onClick={onClickClear}>Clear</Button>
+        </div>
+        <div>
+          <FormGroup>
+            <FormControlLabel control={<Switch checked={checked} onChange={switchHandler} />} label="write on the right" />
+          </FormGroup>
         </div>
       </div>
 

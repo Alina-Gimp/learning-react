@@ -47,5 +47,8 @@
 .buttonClear {
     margin-left: 10px;
     display:inline-block;
+}
 
+.textMessage {
+    text-align: left;
 }

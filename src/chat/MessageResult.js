@@ -5,9 +5,9 @@ function MessageResult({ messages }) {
   return (
     <div className="windowMessage">
       {
-                messages.map((message, index) => (
+                messages.map((message, item) => (
                   <MessageResultRow
-                    key={index}
+                    key={item.id}
                     message={message}
                   />
 
