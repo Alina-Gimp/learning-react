@@ -5,7 +5,6 @@ import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import MessageInputRow from './MessageInputRow';
 
-
 function MessageInput({ sentMessage, clearChat }) {
   const [message, setMessage] = useState('');
   const onMessageChange = (event) => {
@@ -47,7 +46,7 @@ function MessageInput({ sentMessage, clearChat }) {
         onSend={onClickSent}
       />
       <MessageInputRow
-        placeholder="Your message"
+        placeholder="Name"
         parameter={author}
         onChange={onAuthorChange}
         onSend={onClickSent}

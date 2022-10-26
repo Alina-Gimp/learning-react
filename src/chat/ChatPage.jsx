@@ -27,7 +27,7 @@ function ChatPage() {
       text,
       date: new Date(),
       author,
-      isMe
+      isMe,
     };
     messagesForSending.push(message);
 
