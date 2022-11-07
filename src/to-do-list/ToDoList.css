@@ -23,13 +23,10 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 100%;
-    justify-content: space-between;
 }
 
-.buttonNewTask {
-
-
+.button {
+margin-bottom: 10px;
 }
 
 .inputTask {
@@ -40,4 +37,8 @@
 .task {
     font-family: monospace;
     font-size: 20px;
+}
+
+.input {
+    margin-bottom: 40px;
 }

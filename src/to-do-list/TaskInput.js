@@ -27,7 +27,7 @@ function TaskInput({ addTask }) {
 
   return (
     <div className="buttonInputDiv">
-      <div>
+      <div className="input">
         <TextField
           className="inputTask"
           label="New task"
@@ -38,7 +38,7 @@ function TaskInput({ addTask }) {
           onKeyDown={onKeyDownHandler}
         />
       </div>
-      <div>
+      <div className="button">
         <Button className="buttonNewTask" variant="contained" onClick={onClickAdd}>Add task</Button>
       </div>
     </div>

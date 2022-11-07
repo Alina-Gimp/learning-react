@@ -15,6 +15,7 @@ function ToDoList() {
   return (
     <div className="windowList">
       <h1 className="header">To Do list</h1>
+
       <TasksList
         tasks={tasks}
       />
