@@ -11,7 +11,7 @@ function MessageInputRow({
   };
 
   return (
-    <div className="input">
+    <div className="inputText">
       <TextField
         id="outlined-basic"
         label={placeholder}
