@@ -24,6 +24,7 @@ function InputUserFromObject({ saveUser }) {
   return (
     <div>
       <button
+        type="button"
         id="btn"
         className="buttonSave"
         onClick={onClickSave}

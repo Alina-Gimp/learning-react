@@ -11,7 +11,7 @@ import UserPage from './crm/user/UserPage';
 
 export default function App() {
   return (
-    <div>
+    <div style={{ height: '100%' }}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="chat" element={<ChatPage />} />
